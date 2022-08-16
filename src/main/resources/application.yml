@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: info
+
+spring.cloud:
+  function.definition: handle
+  stream.bindings.handle-in-0:
+    consumer.max-attempts: 1
+    error-handler-definition: errorHandler
+  jmx.enabled: false
